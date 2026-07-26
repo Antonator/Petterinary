@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petterinary | Inicio de sesión</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+    <!--Font - Google API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <main class="main-login">  <!--Inicia contenedor principal de interfaz de login-->
+        <div class="sin-contenedor"> <!--div para centrar el contenido de la interfaz-->
+            <section class="contenedor-login"> <!--Contiene el bloque del contenido-->
+                <div class="contenido-login"> <!--Contiene los elementos de la interfaz-->
+                    <div class="contenedor-izq"> <!--Contenedor izquierdo de la interfaz-->
+                        <!--Logo y nombre del sistema-->
+                        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#04342c" d="M298.5 156.9C312.8 199.8 298.2 243.1 265.9 253.7C233.6 264.3 195.8 238.1 181.5 195.2C167.2 152.3 181.8 109 214.1 98.4C246.4 87.8 284.2 114 298.5 156.9zM164.4 262.6C183.3 295 178.7 332.7 154.2 346.7C129.7 360.7 94.5 345.8 75.7 313.4C56.9 281 61.4 243.3 85.9 229.3C110.4 215.3 145.6 230.2 164.4 262.6zM133.2 465.2C185.6 323.9 278.7 288 320 288C361.3 288 454.4 323.9 506.8 465.2C510.4 474.9 512 485.3 512 495.7L512 497.3C512 523.1 491.1 544 465.3 544C453.8 544 442.4 542.6 431.3 539.8L343.3 517.8C328 514 312 514 296.7 517.8L208.7 539.8C197.6 542.6 186.2 544 174.7 544C148.9 544 128 523.1 128 497.3L128 495.7C128 485.3 129.6 474.9 133.2 465.2zM485.8 346.7C461.3 332.7 456.7 295 475.6 262.6C494.5 230.2 529.6 215.3 554.1 229.3C578.6 243.3 583.2 281 564.3 313.4C545.4 345.8 510.3 360.7 485.8 346.7zM374.1 253.7C341.8 243.1 327.2 199.8 341.5 156.9C355.8 114 393.6 87.8 425.9 98.4C458.2 109 472.8 152.3 458.5 195.2C444.2 238.1 406.4 264.3 374.1 253.7z"/></svg>
+                        <p class="texto-principal">Petterinary</p>
+                        <p class="texto-secundario">Gestión integral de veterinaria</p>
+                    </div> <!--Termina contenedor izquierdo de la interfaz-->
+                    <form id="formRegistro" class="contenedor-formulario-login"> <!--Contenedor del formulario-->
+                        <fieldset class="contenido-formulario-login"> <!--Contiene los elementos del formulario-->
+                            <div class="contenedor-texto"> <!--Contiene mensajes de bienvenida-->
+                                <p class="texto-principal">¡Crea una cuenta!</p>
+                                <p class="texto-secundario">Bienvenido</p>
+                            </div>
+                            <div class="contenedor-campos"> <!--Contiene los campos del formulario-->
+                                <label class="campo-label" for="nombre">Nombre(s)</label>
+                                <input placeholder="Tu nombre" class="campo" type="text" name="nombre" id="nombre">
+                                <label class="campo-label" for="apellidos">Apellidos</label>
+                                <input placeholder="Paterno - Materno" class="campo" type="text" name="apellidos" id="apellidos">
+                                <label class="campo-label" for="usuario">Usuario</label>
+                                <input placeholder="usuario" class="campo" type="text" name="usuario" id="usuario">
+                                <label class="campo-label" for="correo">Correo electrónico</label>
+                                <input placeholder="usuario@petterinary.com" class="campo" type="email" name="correo" id="correo">
+                                <label class="campo-label" for="password">Contraseña</label>
+                                <input placeholder="********" class="campo" type="password" name="password" id="password">
+                                <p class="error hidden">Credenciales incorrectas</p>
+                                <input class="boton-login" type="submit" value="Crear cuenta">
+                                <p class="texto-registro">¿Ya estás registrado? <a class="link-registro" href="login.html">Inicia sesión aquí</a></p>
+                            </div>
+                        </fieldset> <!--Termina el contenedor de los elementos del form del login-->
+                    </form> <!--Termina el contenedor del formulario de inicio de sesión-->
+                </div> <!--Termina el contenedor de los elementos de la interfaz-->
+            </section> <!--Termina el contenedor que contiene el bloque de contenido-->
+        </div> <!--Termina div para centrar contenido de la interfaz-->
+    </main> <!--Termina contenedor principal de interfaz de login--> 
+
+    <script src="https://kit.fontawesome.com/472ad113de.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
